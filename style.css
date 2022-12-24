@@ -815,3 +815,39 @@ article.panel-list-wrap ul li a i {
     font-size: 16px;
     opacity: 0.9;
 }
+
+.style-3 {
+    padding: 20px 15px;
+}
+
+.style-3 .card-box {
+    display: flex;
+    align-items: center;
+}
+
+.style-3 .card-box .icon {
+    margin-right: 8px;
+}
+
+.style-3 .card-box i {
+    display: block;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: #ffffff;
+    background: #000000;
+    border-radius: 5px;
+}
+
+.style-3 .card-box .card-meta {}
+
+.style-3 .card-box .card-meta h3 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.style-3 .card-box .card-meta span {
+    opacity: 0.9;
+}
+
