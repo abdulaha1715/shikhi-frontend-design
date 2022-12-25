@@ -851,3 +851,90 @@ article.panel-list-wrap ul li a i {
     opacity: 0.9;
 }
 
+
+
+/**
+ * List
+ */
+
+.dashboard-lists {
+    margin-top: 40px;
+}
+
+.list-card {
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    margin-bottom: 45px;
+    border-radius: 5px;
+}
+
+.list-card .table-head {
+    background: transparent;
+    padding: 15px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.list-card .table-head h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.list-card table {}
+
+.list-card table tr {
+    vertical-align: baseline;
+    border-bottom: 1px dashed #ddd;
+}
+
+.list-card table.spot tr td {
+    font-size: 14px;
+    padding: 10px 35px;
+}
+
+.list-card table tr td {
+    font-size: 14px;
+    padding: 10px 15px;
+}
+
+.list-card table tr:last-child {
+    border: none;
+}
+
+.list-card table tr td:last-child {
+    color: #878a99 !important;
+    padding: 10px 15px;
+    text-align: right;
+}
+
+.list-card table tr td span {
+    position: relative;
+}
+
+.list-card table tr td span:before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #56CCF2;
+    margin-right: 8px;
+    border-radius: 5px;
+    top: 3px;
+    left: -20px;
+}
+
+.list-card table tr td img {
+    width: 55px;
+}
+
+.list-card table tr th:last-child {
+    text-align: right;
+}
+
+.list-card table tr th {
+    padding: 8px 15px;
+}
+
+.list-card table.image tr th:first-child {
+    width: 90px;
+}
