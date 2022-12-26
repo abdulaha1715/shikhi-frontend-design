@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Shikhi</title>
+  </head>
+
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light border-bottom border-1 pt-3 pb-3"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <h2 class="fw-bolder">Shikhi</h2>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="dashboard.html"
+                  >Dashboard</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Courses</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="dashboard-header">
+          <div class="dashboard-header-left">
+            <div class="tutor-avatar">
+              <img
+                src="https://ui-avatars.com/api/?size=100&background=0D8ABC&color=fff&name=Polash+Mahmud"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="dash-header-user-info">
+              <div class="tutor-comments-date">Hello,</div>
+              <a href="#">Polash Mahmud</a>
+            </div>
+          </div>
+          <div class="dashboard-header-right">
+            <p>Your Application is pending as of 08 July, 2019</p>
+          </div>
+        </div>
+      </div>
+      <hr class="border-1 mb-2" />
+      <div class="row dashboard-pills mt-4">
+        <div class="d-flex align-items-start">
+          <div
+            class="nav flex-column nav-pills me-4 button-list"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
+            <button
+              class="nav-link active"
+              id="v-pills-dashboard-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-dashboard"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-dashboard"
+              aria-selected="true"
+            >
+              <i class="bi bi-speedometer2 dashboard-icon"></i>
+              Dashboard
+            </button>
+
+            <button
+              class="nav-link"
+              id="v-pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-profile"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-profile"
+              aria-selected="false"
+            >
+              <i class="bi bi-person-fill dashboard-icon"></i>
+              My Profile
+            </button>
+
+            <button
+              class="nav-link"
+              id="v-pills-enrolled-courses-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-enrolled-courses"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-enrolled-courses"
+              aria-selected="false"
+            >
+              <i class="bi bi-mortarboard-fill dashboard-icon"></i>
+              Enrolled Courses
+            </button>
+
+            <button
+              class="nav-link"
+              id="v-pills-wishlist-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-wishlist"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-wishlist"
+              aria-selected="false"
+            >
+              <i class="bi bi-bookmark-fill dashboard-icon"></i>
+              Wishlist
+            </button>
+
+            <button
+              class="nav-link"
+              id="v-pills-reviews-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-reviews"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-reviews"
+              aria-selected="false"
+            >
+              <i class="bi bi-star-fill dashboard-icon"></i>
+              Reviews
+            </button>
+
+            <button
+              class="nav-link"
+              id="v-pills-quiz-attempts-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-quiz-attempts"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-quiz-attempts"
+              aria-selected="false"
+            >
+              <i class="bi bi-boxes dashboard-icon"></i>
+              My Quiz Attempts
+            </button>
+
+            <button
+              class="nav-link"
+              id="v-pills-order-history-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-order-history"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-order-history"
+              aria-selected="false"
+            >
+              <i class="bi bi-cart3 dashboard-icon"></i>
+              Order History
+            </button>
+
+            <button
+              class="nav-link"
+              id="v-pills-question-answer-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-question-answer"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-question-answer"
+              aria-selected="false"
+            >
+              <i class="bi bi-question-diamond-fill dashboard-icon"></i>
+              Question & Answer
+            </button>
+
+            <button
+              class="nav-link"
+              id="v-pills-settings-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-settings"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-settings"
+              aria-selected="false"
+            >
+              <i class="bi bi-gear-fill dashboard-icon"></i>
+              Settings
+            </button>
+            <button
+              class="nav-link"
+              id="v-pills-logout-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-logout"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-logout"
+              aria-selected="false"
+            >
+              <i class="bi bi-box-arrow-right dashboard-icon"></i>
+              Logout
+            </button>
+          </div>
+          <div class="tab-content" id="v-pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="v-pills-dashboard"
+              role="tabpanel"
+              aria-labelledby="v-pills-dashboard-tab"
+            >
+              <h4>Dashboard</h4>
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 mt-4">
+                  <div class="card text-center">
+                    <div class="card-body card-dshboard">
+                      <i class="bi bi-book-fill"></i>
+                      <h5 class="card-title">8</h5>
+                      <p class="card-text">Enrolled Courses</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mt-4">
+                  <div class="card text-center">
+                    <div class="card-body card-dshboard">
+                      <i class="bi bi-mortarboard-fill"></i>
+                      <h5 class="card-title">8</h5>
+                      <p class="card-text">Enrolled Courses</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mt-4">
+                  <div class="card text-center">
+                    <div class="card-body card-dshboard">
+                      <i class="bi bi-trophy-fill"></i>
+                      <h5 class="card-title">8</h5>
+                      <p class="card-text">Enrolled Courses</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h4 class="progress-courses-heading">In Progress Courses</h4>
+              <div class="progress-courses">
+                <div class="row progress-course">
+                  <div class="col-md-4 progress-course-img">
+                    <a href="single-progress-courses.html">
+                      <img src="assets/images/js.jpg" alt="" srcset="" />
+                    </a>
+                  </div>
+                  <div class="col-md-8 progress-course-meta">
+                    <div class="progress-courses-wrapper">
+                      <div class="tutor-course-ratings">
+                        <div class="tutor-ratings">
+                          <div class="tutor-ratings">
+                            <span class="tutor-icon-star-bold"
+                              ><i class="bi bi-star"></i
+                            ></span>
+                            <span class="tutor-icon-star-bold"
+                              ><i class="bi bi-star"></i
+                            ></span>
+                            <span class="tutor-icon-star-bold"
+                              ><i class="bi bi-star"></i
+                            ></span>
+                            <span class="tutor-icon-star-bold"
+                              ><i class="bi bi-star"></i
+                            ></span>
+                            <span class="tutor-icon-star-bold"
+                              ><i class="bi bi-star"></i
+                            ></span>
+                          </div>
+                          <div class="tutor-ratings-average">5.0</div>
+                        </div>
+                      </div>
+                      <div class="progress-course-title">
+                        <h3>Lorem ipsum dolor sit.</h3>
+                      </div>
+                      <div class="progress-course-complete">
+                        <p>Complete lessons: 0 of 20</p>
+                      </div>
+                      <div class="course-progress">
+                        <div class="">
+                          <div class="progress">
+                            <div
+                              class="progress-bar progress-bar-striped"
+                              role="progressbar"
+                              style="width: 10%"
+                              aria-valuenow="10"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="course-progress-title">0% complete</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="v-pills-profile"
+              role="tabpanel"
+              aria-labelledby="v-pills-profile-tab"
+            >
+              <div class="tutor-dashboard-content">
+                <div class="pb-4"><h2>My Profile</h2></div>
+                <div class="tutor-profile d-flex mb-3">
+                  <div class="col-md-3 col-sm-6">Registration Date</div>
+                  <div class="col-md-9 col-sm-6">July 8, 2019 7:04 am</div>
+                </div>
+                <div class="tutor-profile d-flex mb-3">
+                  <div class="col-md-3 col-sm-6">Name</div>
+                  <div class="col-md-9 col-sm-6">Gazi Moshiul</div>
+                </div>
+                <div class="tutor-profile d-flex mb-3">
+                  <div class="col-md-3 col-sm-6">User Name</div>
+                  <div class="col-md-9 col-sm-6">moshiul</div>
+                </div>
+                <div class="tutor-profile d-flex mb-3">
+                  <div class="col-md-3 col-sm-6">Email</div>
+                  <div class="col-md-9 col-sm-6">gazimoshiul@gmail.com</div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="v-pills-enrolled-courses"
+              role="tabpanel"
+              aria-labelledby="v-pills-enrolled-courses-tab"
+            >
+              <h3>Enrolled Courses</h3>
+
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-enrolled-courses-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-enrolled-courses"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-enrolled-courses"
+                    aria-selected="true"
+                  >
+                    Enrolled Courses (8)
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-active-courses-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-active-courses"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-active-courses"
+                    aria-selected="false"
+                  >
+                    Active Courses (5)
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-complete-courses-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-complete-courses"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-complete-courses"
+                    aria-selected="false"
+                  >
+                    Complete Courses (3)
+                  </button>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-enrolled-courses"
+                  role="tabpanel"
+                  aria-labelledby="pills-enrolled-courses-tab"
+                >
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 mt-4">
+                      <div class="card">
+                        <img
+                          src="assets/images/js.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+
+                        <div class="card-body pb-0">
+                          <div class="tutor-course-ratings">
+                            <div class="tutor-ratings">
+                              <div class="tutor-ratings">
+                                <span class="tutor-icon-star-bold"
+                                  ><i class="bi bi-star"></i
+                                ></span>
+                                <span class="tutor-icon-star-bold"
+                                  ><i class="bi bi-star"></i
+                                ></span>
+                                <span class="tutor-icon-star-bold"
+                                  ><i class="bi bi-star"></i
+                                ></span>
+                                <span class="tutor-icon-star-bold"
+                                  ><i class="bi bi-star"></i
+                                ></span>
+                                <span class="tutor-icon-star-bold"
+                                  ><i class="bi bi-star"></i
+                                ></span>
+                              </div>
+                              <div class="tutor-ratings-average">5.0</div>
+                              <div class="tutor-ratings-count">(110)</div>
+                            </div>
+                          </div>
+                          <h5 class="card-title mt-3 mb-3">Card title</h5>
+                          <div class="tutor-compilation-status mb-3">
+                            <span
+                              class="complete-tutor-number"
+                              area-hidden="true"
+                              >0/20</span
+                            >
+                            <span class="tutor-meta-value">0% complete</span>
+                          </div>
+
+                          <div class="tutor-meta">
+                            <div class="progress" style="height: 5px">
+                              <div
+                                class="progress-bar"
+                                style="width: 40%; height: 10px"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr class="border-1 mb-2" />
+                        <a href="single-progress-courses.html" class="btn-tutor"
+                          >Start Learning</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-active-courses"
+                  role="tabpanel"
+                  aria-labelledby="pills-active-courses-tab"
+                >
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 mt-4">
+                      <div class="card">
+                        <img
+                          src="assets/images/js.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+
+                        <div class="card-body pb-0">
+                          <div class="tutor-course-ratings">
+                            <div class="tutor-ratings">
+                              <div class="tutor-ratings">
+                                <span class="tutor-icon-star-bold"
+                                  ><i class="bi bi-star"></i
+                                ></span>
+                                <span class="tutor-icon-star-bold"
+                                  ><i class="bi bi-star"></i
+                                ></span>
+                                <span class="tutor-icon-star-bold"
+                                  ><i class="bi bi-star"></i
+                                ></span>
+                                <span class="tutor-icon-star-bold"
+                                  ><i class="bi bi-star"></i
+                                ></span>
+                                <span class="tutor-icon-star-bold"
+                                  ><i class="bi bi-star"></i
+                                ></span>
+                              </div>
+                              <div class="tutor-ratings-average">5.0</div>
+                              <div class="tutor-ratings-count">(7)</div>
+                            </div>
+                          </div>
+                          <h5 class="card-title mt-3 mb-3">Card title</h5>
+                          <div class="tutor-compilation-status mb-3">
+                            <span
+                              class="complete-tutor-number"
+                              area-hidden="true"
+                              >0/20</span
+                            >
+                            <span class="tutor-meta-value">0% complete</span>
+                          </div>
+
+                          <div class="tutor-meta">
+                            <div class="progress" style="height: 10px">
+                              <div
+                                class="progress-bar"
+                                style="width: 40%; height: 10px"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr class="border-1 mb-2" />
+                        <a href="single-page.html" class="btn-tutor"
+                          >Start Learning</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="pills-complete-courses"
+                  role="tabpanel"
+                  aria-labelledby="pills-complete-courses-tab"
+                >
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 mt-4">
+                      <div class="card">
+                        <img
+                          src="assets/images/js.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+
+                        <div class="card-body pb-0">
+                          <div class="tutor-course-ratings">
+                            <div class="tutor-ratings">
+                              <div class="tutor-ratings">
+                                <span class="tutor-icon-star-bold"
+                                  ><i class="bi bi-star"></i
+                                ></span>
+                                <span class="tutor-icon-star-bold"
+                                  ><i class="bi bi-star"></i
+                                ></span>
+                                <span class="tutor-icon-star-bold"
+                                  ><i class="bi bi-star"></i
+                                ></span>
+                                <span class="tutor-icon-star-bold"
+                                  ><i class="bi bi-star"></i
+                                ></span>
+                                <span class="tutor-icon-star-bold"
+                                  ><i class="bi bi-star"></i
+                                ></span>
+                              </div>
+                              <div class="tutor-ratings-average">5.0</div>
+                              <div class="tutor-ratings-count">(7)</div>
+                            </div>
+                          </div>
+                          <h5 class="card-title mt-3 mb-3">Card title</h5>
+                          <div class="tutor-compilation-status mb-3">
+                            <span
+                              class="complete-tutor-number"
+                              area-hidden="true"
+                              >0/20</span
+                            >
+                            <span class="tutor-meta-value">0% complete</span>
+                          </div>
+
+                          <div class="tutor-meta">
+                            <div class="progress" style="height: 10px">
+                              <div
+                                class="progress-bar"
+                                style="width: 40%; height: 10px"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr class="border-1 mb-2" />
+                        <a href="single-page.html" class="btn-tutor"
+                          >Start Learning</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="v-pills-wishlist"
+              role="tabpanel"
+              aria-labelledby="v-pills-wishlist-tab"
+            >
+              wishlist
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="v-pills-reviews"
+              role="tabpanel"
+              aria-labelledby="v-pills-reviews-tab"
+            >
+              Reviews
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="v-pills-quiz-attempts"
+              role="tabpanel"
+              aria-labelledby="v-pills-quiz-attempts-tab"
+            >
+              My Quiz Attempts
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="v-pills-order-history"
+              role="tabpanel"
+              aria-labelledby="v-pills-order-history-tab"
+            >
+              Order History
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="v-pills-question-answer"
+              role="tabpanel"
+              aria-labelledby="v-pills-question-answer-tab"
+            >
+              Question & Answer
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="v-pills-settings"
+              role="tabpanel"
+              aria-labelledby="v-pills-settings-tab"
+            >
+              Settings
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-5 widget_text single-footer-item">
+            <h3 class="fw-bold">About Us</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              nisi assumenda, saepe sed eveniet atque?
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Reiciendis, excepturi.
+            </p>
+          </div>
+          <div class="col widget_nav_menu single-footer-item">
+            <h3 class="fw-bold">Popular Courses</h3>
+            <ul class="footer-menu">
+              <li><a href="">Java</a></li>
+              <li><a href="">JavaScript</a></li>
+              <li><a href="">React</a></li>
+              <li><a href="">Laravel</a></li>
+            </ul>
+          </div>
+          <div class="col widget_nav_menu single-footer-item">
+            <h3 class="fw-bold">Our Profile</h3>
+          </div>
+        </div>
+        <hr class="border-1 mb-2" />
+        <div class="row">
+          <div class="copy-right-text mb-3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium, doloribus.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
