@@ -649,6 +649,11 @@ aside.panel-sidebar {
     width: calc(100% - 26%);
 }
 
+aside.panel-sidebar h3 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
 .user-meta {
     text-align: center;
     margin-top: 40px;
