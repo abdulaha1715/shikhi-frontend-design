@@ -1106,15 +1106,10 @@ button.cancle {
 
 /* sidebar style */
 
-aside.panel-sidebar {
-    margin-right: 0px !important;
-    min-width: unset !important;
-}
-
-.components-body {
-    background: #ffffff;
-    padding: 15px;
-    border-radius: 4px;
+.wishlist-lists {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
 }
 
 .wishtlist-container {
@@ -1198,32 +1193,4 @@ aside.panel-sidebar {
     font-size: 12px;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-    article.panel-list-wrap ul {
-        display: flex;
-    }
 
-    article.panel-list-wrap ul li a {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-    }
-
-    article.panel-list-wrap ul li a i {
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        font-size: 25px;
-        display: inline-block;
-        line-height: 40px;
-    }
-
-    aside.panel-sidebar {
-        margin-top: 10px;
-    }
-
-    .user-meta {
-        display: none;
-    }
-}
