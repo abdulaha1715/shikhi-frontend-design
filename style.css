@@ -1082,6 +1082,7 @@ button.cancle {
     border-radius: 25px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
 .c_progress {}
 
 .c_progress .c_progress-bar {
@@ -1102,3 +1103,127 @@ button.cancle {
     font-size: 12px;
 }
 
+
+/* sidebar style */
+
+aside.panel-sidebar {
+    margin-right: 0px !important;
+    min-width: unset !important;
+}
+
+.components-body {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.wishtlist-container {
+    margin: 0 0 15px 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 0 0 4px 4px;
+    padding-bottom: 10px;
+}
+
+.wishlist-content {
+    padding: 10px 15px;
+}
+
+.wlist-title h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 8px 0 0;
+}
+
+.wlist-author span {
+    font-size: 0.8rem;
+    color: #747474;
+}
+
+.wlist-status .category {
+    font-size: 0.9rem;
+}
+
+.wlist-status .tutor-ratings {
+    padding: 0 !important;
+    text-align: end;
+}
+
+.wlist-status .tutor-ratings-count {
+    padding-left: 0 !important;
+    text-align: end;
+}
+
+.wlist-img {
+    position: relative;
+}
+
+.wlist-delete i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #ff0000;
+    background: #ffffff;
+    font-size: 16px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.wlist-delete i:hover {
+    color: #ffffff;
+    background: #ff0000;
+}
+
+.cat-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.cat-rating .rating {}
+
+.cat-rating .rating span.count {
+    display: block;
+    text-align: right;
+    font-size: 12px;
+}
+
+.cat-rating .rating i {
+    font-size: 12px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    article.panel-list-wrap ul {
+        display: flex;
+    }
+
+    article.panel-list-wrap ul li a {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    article.panel-list-wrap ul li a i {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+        display: inline-block;
+        line-height: 40px;
+    }
+
+    aside.panel-sidebar {
+        margin-top: 10px;
+    }
+
+    .user-meta {
+        display: none;
+    }
+}
