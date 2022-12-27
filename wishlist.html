@@ -72,7 +72,7 @@
     <section class="user-auth pt-5 pb-4">
       <div class="container">
         <div class="row">
-            <div class="d-none d-sm-block d-sm-none d-md-block col-3">
+            <div class="col-md-4 order-md-1 order-2">
                 <aside class="panel-sidebar">
                     <div class="user-meta">
                       <img
@@ -98,15 +98,10 @@
                     </article>
                   </aside>
             </div>
-            <div class="col-md-9 col-sm-12">
+            <div class="col-md-8 order-md-2 order-1">
 
-                <!-- <div class="panel-content">
-                    
-                      <h1>Hello, Wishlist</h1> -->
-      
-                      <!-- <div class="container"> -->
-                        <div class="components-body">
-                      <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1">
+                    <div class="components-body">
+                      <div class="row row-cols-lg-3 row-cols-sm-2 row-cols-1">
                         <div class="col">
                           <div class="wishtlist-container">
                             <div class="wlist-img">
@@ -300,13 +295,9 @@
                         
                       </div>
                       </div>
-                    <!-- </div>
-                  </div> -->
+                   
             </div>
-          <!-- <div class="user-panel"> -->
-            
-            
-          <!-- </div> -->
+          
         </div>
       </div>
     </section>
@@ -418,6 +409,35 @@ aside.panel-sidebar {
   }
   .wlist-delete i:hover {
     background-color: #fff;
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (max-width: 768px) {
+    article.panel-list-wrap ul{
+        display: flex
+    }
+
+    article.panel-list-wrap ul li a {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+article.panel-list-wrap ul li a i {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    display: inline-block;
+    line-height: 40px;
+}
+    aside.panel-sidebar {
+    margin-top: 10px;
+}
+    .user-meta {
+    display: none;
+}
   }
 </style>
 
