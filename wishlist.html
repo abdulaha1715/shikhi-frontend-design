@@ -1,449 +1,501 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
 
     <link rel="stylesheet" href="style.css" />
 
-    <title>Shikhi</title>
-</head>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-<body>
+    <title>Shikhi</title>
+  </head>
+
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light border-bottom border-1 pt-3 pb-3">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <h2 class="fw-bolder">Shikhi</h2>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="dashboard.html">Dashboard</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Courses</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav
+        class="navbar navbar-expand-lg navbar-light border-bottom border-1 pt-3 pb-3"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <h2 class="fw-bolder">Shikhi</h2>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="dashboard.html"
+                  >Dashboard</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Courses</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <section class="user-auth pt-5 pb-4">
-        <div class="container">
-            <div class="row">
-                <div class="user-panel">
-                    <aside class="panel-sidebar">
-                        <div class="user-meta">
-                            <img src="https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=Shadhin+Ahmed"
-                                alt="" />
-                        </div>
-                        <article class="panel-list-wrap">
-                            <ul>
-                                <li>
-                                    <a href=""><i class="bi bi-speedometer2"></i> Dashboard</a>
-                                </li>
-                                <li>
-                                    <a href=""><i class="bi bi-person-fill"></i>My Profile</a>
-                                </li>
-                                <li class="active">
-                                    <a href=""><i class="bi bi-water"></i> Wishlist</a>
-                                </li>
-                                <li>
-                                    <a href=""><i class="bi bi-box-arrow-right"></i> Logout</a>
-                                </li>
-                            </ul>
-                        </article>
-                    </aside>
-                    <div class="panel-content">
-                        <div class="components-body">
-                            <h1>Hello, Wishlist</h1>
+      <div class="container">
+        <div class="row">
+          <div class="user-panel">
+            <aside class="panel-sidebar">
+              <div class="user-meta">
+                <img
+                  src="https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=Shadhin+Ahmed"
+                  alt=""
+                />
+              </div>
+              <article class="panel-list-wrap">
+                <ul>
+                  <li>
+                    <a href=""><i class="bi bi-speedometer2"></i> Dashboard</a>
+                  </li>
+                  <li>
+                    <a href=""><i class="bi bi-person-fill"></i>My Profile</a>
+                  </li>
+                  <li class="active">
+                    <a href=""><i class="bi bi-water"></i> Wishlist</a>
+                  </li>
+                  <li>
+                    <a href=""><i class="bi bi-box-arrow-right"></i> Logout</a>
+                  </li>
+                </ul>
+              </article>
+            </aside>
+            <div class="panel-content">
+              <div class="components-body">
+                <h1>Hello, Wishlist</h1>
 
-                            <!-- <div class="container"> -->
-                            <div class="row row-cols-3">
-                                <div class="col">
-                                    <div class="wishtlist-container">
-                                        <div class="wlist-img">
-                                            <img src="assets/images/js.jpg" class="card-img-top" alt="..." />
-                                            <span class="wlist-delete"><i class="bi bi-trash"></i></span>
-                                        </div>
-                                        <div class="wlist-title">
-                                            <h2>Lorem ipsum dolor sit.</h2>
-                                        </div>
-                                        <div class="wlist-author">
-                                            <span>Sumit Shaha</span>
-                                        </div>
-                                        <div class="wlist-status">
-                                            <div class="row">
-                                                <div class="col-4 category">category</div>
-                                                <div class="col-8 ratings">
-                                                    <div class="row row-cols-2 justify-content-end">
-                                                        <span class="col-8 tutor-ratings">
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star"></i>
-                                                        </span>
-                                                        <span class="col-4 tutor-ratings-count">(7)</span>
-                                                    </div>
-    
-                                                </div>
-                                            </div>
-    
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col">
-                                    <div class="wishtlist-container">
-                                        <div class="wlist-img">
-                                            <img src="assets/images/js.jpg" class="card-img-top" alt="..." />
-                                            <span class="wlist-delete"><i class="bi bi-trash"></i></span>
-                                        </div>
-                                        <div class="wlist-title">
-                                            <h2>Lorem ipsum dolor sit.</h2>
-                                        </div>
-                                        <div class="wlist-author">
-                                            <span>Sumit Shaha</span>
-                                        </div>
-                                        <div class="wlist-status">
-                                            <div class="row">
-                                                <div class="col-4 category">category</div>
-                                                <div class="col-8 ratings">
-                                                    <div class="row row-cols-2 justify-content-end">
-                                                        <span class="col-8 tutor-ratings">
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star"></i>
-                                                        </span>
-                                                        <span class="col-4 tutor-ratings-count">(7)</span>
-                                                    </div>
-    
-                                                </div>
-                                            </div>
-    
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col">
-                                    <div class="wishtlist-container">
-                                        <div class="wlist-img">
-                                            <img src="assets/images/js.jpg" class="card-img-top" alt="..." />
-                                            <span class="wlist-delete"><i class="bi bi-trash"></i></span>
-                                        </div>
-                                        <div class="wlist-title">
-                                            <h2>Lorem ipsum dolor sit.</h2>
-                                        </div>
-                                        <div class="wlist-author">
-                                            <span>Sumit Shaha</span>
-                                        </div>
-                                        <div class="wlist-status">
-                                            <div class="row">
-                                                <div class="col-4 category">category</div>
-                                                <div class="col-8 ratings">
-                                                    <div class="row row-cols-2 justify-content-end">
-                                                        <span class="col-8 tutor-ratings">
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star"></i>
-                                                        </span>
-                                                        <span class="col-4 tutor-ratings-count">(7)</span>
-                                                    </div>
-    
-                                                </div>
-                                            </div>
-    
-                                        </div>
-                                    </div>
-                                </div>
-                                
-
-                                <div class="col">
-                                    <div class="wishtlist-container">
-                                        <div class="wlist-img">
-                                            <img src="assets/images/js.jpg" class="card-img-top" alt="..." />
-                                            <span class="wlist-delete"><i class="bi bi-trash"></i></span>
-                                        </div>
-                                        <div class="wlist-title">
-                                            <h2>Lorem ipsum dolor sit.</h2>
-                                        </div>
-                                        <div class="wlist-author">
-                                            <span>Sumit Shaha</span>
-                                        </div>
-                                        <div class="wlist-status">
-                                            <div class="row">
-                                                <div class="col-4 category">category</div>
-                                                <div class="col-8 ratings">
-                                                    <div class="row row-cols-2 justify-content-end">
-                                                        <span class="col-8 tutor-ratings">
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star"></i>
-                                                        </span>
-                                                        <span class="col-4 tutor-ratings-count">(7)</span>
-                                                    </div>
-    
-                                                </div>
-                                            </div>
-    
-                                        </div>
-                                    </div>
-                                </div>
-                                
-
-                                <div class="col">
-                                    <div class="wishtlist-container">
-                                        <div class="wlist-img">
-                                            <img src="assets/images/js.jpg" class="card-img-top" alt="..." />
-                                            <span class="wlist-delete"><i class="bi bi-trash"></i></span>
-                                        </div>
-                                        <div class="wlist-title">
-                                            <h2>Lorem ipsum dolor sit.</h2>
-                                        </div>
-                                        <div class="wlist-author">
-                                            <span>Sumit Shaha</span>
-                                        </div>
-                                        <div class="wlist-status">
-                                            <div class="row">
-                                                <div class="col-4 category">category</div>
-                                                <div class="col-8 ratings">
-                                                    <div class="row row-cols-2 justify-content-end">
-                                                        <span class="col-8 tutor-ratings">
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star"></i>
-                                                        </span>
-                                                        <span class="col-4 tutor-ratings-count">(7)</span>
-                                                    </div>
-    
-                                                </div>
-                                            </div>
-    
-                                        </div>
-                                    </div>
-                                </div>
-                                
-
-                                <div class="col">
-                                    <div class="wishtlist-container">
-                                        <div class="wlist-img">
-                                            <img src="assets/images/js.jpg" class="card-img-top" alt="..." />
-                                            <span class="wlist-delete"><i class="bi bi-trash"></i></span>
-                                        </div>
-                                        <div class="wlist-title">
-                                            <h2>Lorem ipsum dolor sit.</h2>
-                                        </div>
-                                        <div class="wlist-author">
-                                            <span>Sumit Shaha</span>
-                                        </div>
-                                        <div class="wlist-status">
-                                            <div class="row">
-                                                <div class="col-4 category">category</div>
-                                                <div class="col-8 ratings">
-                                                    <div class="row row-cols-2 justify-content-end">
-                                                        <span class="col-8 tutor-ratings">
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star"></i>
-                                                        </span>
-                                                        <span class="col-4 tutor-ratings-count">(7)</span>
-                                                    </div>
-    
-                                                </div>
-                                            </div>
-    
-                                        </div>
-                                    </div>
-                                </div>
-                                
-
-                                <div class="col">
-                                    <div class="wishtlist-container">
-                                        <div class="wlist-img">
-                                            <img src="assets/images/js.jpg" class="card-img-top" alt="..." />
-                                            <span class="wlist-delete"><i class="bi bi-trash"></i></span>
-                                        </div>
-                                        <div class="wlist-title">
-                                            <h2>Lorem ipsum dolor sit.</h2>
-                                        </div>
-                                        <div class="wlist-author">
-                                            <span>Sumit Shaha</span>
-                                        </div>
-                                        <div class="wlist-status">
-                                            <div class="row">
-                                                <div class="col-4 category">category</div>
-                                                <div class="col-8 ratings">
-                                                    <div class="row row-cols-2 justify-content-end">
-                                                        <span class="col-8 tutor-ratings">
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star"></i>
-                                                        </span>
-                                                        <span class="col-4 tutor-ratings-count">(7)</span>
-                                                    </div>
-    
-                                                </div>
-                                            </div>
-    
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col">
-                                    <div class="wishtlist-container">
-                                        <div class="wlist-img">
-                                            <img src="assets/images/js.jpg" class="card-img-top" alt="..." />
-                                            <span class="wlist-delete"><i class="bi bi-trash"></i></span>
-                                        </div>
-                                        <div class="wlist-title">
-                                            <h2>Lorem ipsum dolor sit.</h2>
-                                        </div>
-                                        <div class="wlist-author">
-                                            <span>Sumit Shaha</span>
-                                        </div>
-                                        <div class="wlist-status">
-                                            <div class="row">
-                                                <div class="col-4 category">category</div>
-                                                <div class="col-8 ratings">
-                                                    <div class="row row-cols-2 justify-content-end">
-                                                        <span class="col-8 tutor-ratings">
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <i class="bi bi-star"></i>
-                                                        </span>
-                                                        <span class="col-4 tutor-ratings-count">(7)</span>
-                                                    </div>
-    
-                                                </div>
-                                            </div>
-    
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                              
-
-                                
+                <!-- <div class="container"> -->
+                <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1">
+                  <div class="col">
+                    <div class="wishtlist-container">
+                      <div class="wlist-img">
+                        <img
+                          src="assets/images/js.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <span class="wlist-delete"
+                          ><i class="bi bi-trash"></i
+                        ></span>
+                      </div>
+                      <div class="wlist-title">
+                        <h2>Lorem ipsum dolor sit.</h2>
+                      </div>
+                      <div class="wlist-author">
+                        <span>Sumit Shaha</span>
+                      </div>
+                      <div class="wlist-status">
+                        <div class="row">
+                          <div class="col-4 category">category</div>
+                          <div class="col-8 ratings">
+                            <div class="row row-cols-2 justify-content-end">
+                              <span class="col-8 tutor-ratings">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                              </span>
+                              <span class="col-4 tutor-ratings-count">(7)</span>
                             </div>
-                            <!-- </div> -->
-
-
-
+                          </div>
                         </div>
+                      </div>
                     </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="wishtlist-container">
+                      <div class="wlist-img">
+                        <img
+                          src="assets/images/js.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <span class="wlist-delete"
+                          ><i class="bi bi-trash"></i
+                        ></span>
+                      </div>
+                      <div class="wlist-title">
+                        <h2>Lorem ipsum dolor sit.</h2>
+                      </div>
+                      <div class="wlist-author">
+                        <span>Sumit Shaha</span>
+                      </div>
+                      <div class="wlist-status">
+                        <div class="row">
+                          <div class="col-4 category">category</div>
+                          <div class="col-8 ratings">
+                            <div class="row row-cols-2 justify-content-end">
+                              <span class="col-8 tutor-ratings">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                              </span>
+                              <span class="col-4 tutor-ratings-count">(7)</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="wishtlist-container">
+                      <div class="wlist-img">
+                        <img
+                          src="assets/images/js.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <span class="wlist-delete"
+                          ><i class="bi bi-trash"></i
+                        ></span>
+                      </div>
+                      <div class="wlist-title">
+                        <h2>Lorem ipsum dolor sit.</h2>
+                      </div>
+                      <div class="wlist-author">
+                        <span>Sumit Shaha</span>
+                      </div>
+                      <div class="wlist-status">
+                        <div class="row">
+                          <div class="col-4 category">category</div>
+                          <div class="col-8 ratings">
+                            <div class="row row-cols-2 justify-content-end">
+                              <span class="col-8 tutor-ratings">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                              </span>
+                              <span class="col-4 tutor-ratings-count">(7)</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="wishtlist-container">
+                      <div class="wlist-img">
+                        <img
+                          src="assets/images/js.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <span class="wlist-delete"
+                          ><i class="bi bi-trash"></i
+                        ></span>
+                      </div>
+                      <div class="wlist-title">
+                        <h2>Lorem ipsum dolor sit.</h2>
+                      </div>
+                      <div class="wlist-author">
+                        <span>Sumit Shaha</span>
+                      </div>
+                      <div class="wlist-status">
+                        <div class="row">
+                          <div class="col-4 category">category</div>
+                          <div class="col-8 ratings">
+                            <div class="row row-cols-2 justify-content-end">
+                              <span class="col-8 tutor-ratings">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                              </span>
+                              <span class="col-4 tutor-ratings-count">(7)</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="wishtlist-container">
+                      <div class="wlist-img">
+                        <img
+                          src="assets/images/js.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <span class="wlist-delete"
+                          ><i class="bi bi-trash"></i
+                        ></span>
+                      </div>
+                      <div class="wlist-title">
+                        <h2>Lorem ipsum dolor sit.</h2>
+                      </div>
+                      <div class="wlist-author">
+                        <span>Sumit Shaha</span>
+                      </div>
+                      <div class="wlist-status">
+                        <div class="row">
+                          <div class="col-4 category">category</div>
+                          <div class="col-8 ratings">
+                            <div class="row row-cols-2 justify-content-end">
+                              <span class="col-8 tutor-ratings">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                              </span>
+                              <span class="col-4 tutor-ratings-count">(7)</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="wishtlist-container">
+                      <div class="wlist-img">
+                        <img
+                          src="assets/images/js.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <span class="wlist-delete"
+                          ><i class="bi bi-trash"></i
+                        ></span>
+                      </div>
+                      <div class="wlist-title">
+                        <h2>Lorem ipsum dolor sit.</h2>
+                      </div>
+                      <div class="wlist-author">
+                        <span>Sumit Shaha</span>
+                      </div>
+                      <div class="wlist-status">
+                        <div class="row">
+                          <div class="col-4 category">category</div>
+                          <div class="col-8 ratings">
+                            <div class="row row-cols-2 justify-content-end">
+                              <span class="col-8 tutor-ratings">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                              </span>
+                              <span class="col-4 tutor-ratings-count">(7)</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="wishtlist-container">
+                      <div class="wlist-img">
+                        <img
+                          src="assets/images/js.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <span class="wlist-delete"
+                          ><i class="bi bi-trash"></i
+                        ></span>
+                      </div>
+                      <div class="wlist-title">
+                        <h2>Lorem ipsum dolor sit.</h2>
+                      </div>
+                      <div class="wlist-author">
+                        <span>Sumit Shaha</span>
+                      </div>
+                      <div class="wlist-status">
+                        <div class="row">
+                          <div class="col-4 category">category</div>
+                          <div class="col-8 ratings">
+                            <div class="row row-cols-2 justify-content-end">
+                              <span class="col-8 tutor-ratings">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                              </span>
+                              <span class="col-4 tutor-ratings-count">(7)</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="wishtlist-container">
+                      <div class="wlist-img">
+                        <img
+                          src="assets/images/js.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <span class="wlist-delete"
+                          ><i class="bi bi-trash"></i
+                        ></span>
+                      </div>
+                      <div class="wlist-title">
+                        <h2>Lorem ipsum dolor sit.</h2>
+                      </div>
+                      <div class="wlist-author">
+                        <span>Sumit Shaha</span>
+                      </div>
+                      <div class="wlist-status">
+                        <div class="row">
+                          <div class="col-4 category">category</div>
+                          <div class="col-8 ratings">
+                            <div class="row row-cols-2 justify-content-end">
+                              <span class="col-8 tutor-ratings">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                              </span>
+                              <span class="col-4 tutor-ratings-count">(7)</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                <!-- </div> -->
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <footer class="footer-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-5 widget_text single-footer-item">
-                    <h3 class="fw-bold">About Us</h3>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nisi assumenda, saepe sed
-                        eveniet atque?
-                    </p>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, excepturi.
-                    </p>
-                </div>
-                <div class="col widget_nav_menu single-footer-item">
-                    <h3 class="fw-bold">Popular Courses</h3>
-                    <ul class="footer-menu">
-                        <li><a href="">Java</a></li>
-                        <li><a href="">JavaScript</a></li>
-                        <li><a href="">React</a></li>
-                        <li><a href="">Laravel</a></li>
-                    </ul>
-                </div>
-                <div class="col widget_nav_menu single-footer-item">
-                    <h3 class="fw-bold">Our Profile</h3>
-                </div>
-            </div>
-            <hr class="border-1 mb-2" />
-            <div class="row">
-                <div class="copy-right-text mb-3">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, doloribus.
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-5 widget_text single-footer-item">
+            <h3 class="fw-bold">About Us</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              nisi assumenda, saepe sed eveniet atque?
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Reiciendis, excepturi.
+            </p>
+          </div>
+          <div class="col widget_nav_menu single-footer-item">
+            <h3 class="fw-bold">Popular Courses</h3>
+            <ul class="footer-menu">
+              <li><a href="">Java</a></li>
+              <li><a href="">JavaScript</a></li>
+              <li><a href="">React</a></li>
+              <li><a href="">Laravel</a></li>
+            </ul>
+          </div>
+          <div class="col widget_nav_menu single-footer-item">
+            <h3 class="fw-bold">Our Profile</h3>
+          </div>
         </div>
+        <hr class="border-1 mb-2" />
+        <div class="row">
+          <div class="copy-right-text mb-3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium, doloribus.
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
 </html>
 
-
 <style>
-
-.wishtlist-container {
+  .wishtlist-container {
     margin: 10px 0;
-}
+  }
 
-    .wlist-title h2 {
-        font-size: 1.2rem;
-        font-weight: 600;
-        margin: 8px 0 0;
-    }
+  .wlist-title h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 8px 0 0;
+  }
 
-    .wlist-author span {
-        font-size: .8rem;
-        color: #747474;
-    }
+  .wlist-author span {
+    font-size: 0.8rem;
+    color: #747474;
+  }
 
-    .wlist-status .category {
-        font-size: .9rem;
-    }
+  .wlist-status .category {
+    font-size: 0.9rem;
+  }
 
-    .wlist-status  .tutor-ratings {
+  .wlist-status .tutor-ratings {
     padding: 0 !important;
     text-align: end;
-}
+  }
 
-.wlist-status .tutor-ratings-count {
+  .wlist-status .tutor-ratings-count {
     padding-left: 0 !important;
     text-align: end;
-}
-.wlist-img {
+  }
+  .wlist-img {
     position: relative;
-}
-.wlist-delete i {
+  }
+  .wlist-delete i {
     font-size: 1.2rem;
     color: red;
     border: 1px solid;
@@ -454,10 +506,32 @@
     cursor: pointer;
     border-radius: 4px;
     padding: 4px;
-    transition: .2s all ease-in;
-}
-.wlist-delete i:hover{
+    transition: 0.2s all ease-in;
+  }
+  .wlist-delete i:hover {
     background-color: #fff;
-}
-
+  }
 </style>
+
+<script>
+  $(function ($) {
+    $(".wlist-delete").on("click", function () {
+      Swal.fire({
+        title: "Are you sure?",
+        text: "You won't be able to revert this!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, delete it!",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire("Deleted!", "Your file has been deleted.", "success");
+        }
+      });
+    });
+  });
+  // $(function () {
+
+  // });
+</script>
