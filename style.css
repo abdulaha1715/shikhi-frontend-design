@@ -956,6 +956,7 @@ article.panel-list-wrap ul li a i {
     padding-bottom: 20px;
     margin-bottom: 30px;
 }
+
 .user-image .image {
     display: flex;
     align-items: center;
@@ -1003,7 +1004,7 @@ button.cancle {
     border: 1px solid #ddd;
 }
 
-.btn-check:focus+.btn, 
+.btn-check:focus+.btn,
 .btn:focus {
     outline: none !important;
     box-shadow: none !important;
@@ -1019,10 +1020,12 @@ button.cancle {
     grid-column-gap: 30px;
     grid-row-gap: 30px;
 }
+
 .course_progrss {
     box-shadow: 0 0 4px;
     border-radius: 5px;
 }
+
 .course_progrss img {
     width: 100%;
 }
@@ -1045,6 +1048,7 @@ button.cancle {
     color: #5e5e5e;
     font-size: 15px;
 }
+
 .progress_btn a {
     border: 1px solid;
     padding: 8px 95px;
@@ -1063,6 +1067,7 @@ button.cancle {
     background-color: #000;
     color: #ffffff;
 }
+
 .progress_btn span {
     position: absolute;
     display: block;
@@ -1073,3 +1078,25 @@ button.cancle {
     color: #4008ed;
     background-color: #ffffff;
 }
+
+.c_progress {}
+
+.c_progress .c_progress-bar {
+    width: 100%;
+    height: 3px;
+    background: #E9ECEF;
+    position: relative;
+}
+
+.c_progress .c_progress-bar:before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 20%;
+    background: #0D6EFD;
+}
+
+.c_progress span {
+    font-size: 12px;
+}
+
